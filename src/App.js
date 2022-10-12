@@ -13,8 +13,12 @@ function App() {
   // Efficient when making API requests
   const debouncedSearchTerm = useDebouncedInput(searchTerm, 1000);
 
-  const searchResults = moviesList.filter((movie) =>
-    movie.name.toLowerCase().includes(debouncedSearchTerm)
+  const searchResults = React.useMemo(
+    () =>
+      moviesList.filter((movie) =>
+        movie.name.toLowerCase().includes(debouncedSearchTerm)
+      ),
+    [moviesList, debouncedSearchTerm]
   );
 
   const handleFormSubmit = (movie) => {

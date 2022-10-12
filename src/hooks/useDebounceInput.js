@@ -1,7 +1,5 @@
 import * as React from "react";
 
-const DELAY = 1000;
-
 export default function useDebouncedInput(value, delay) {
   const [debouncedValue, setDebouncedValue] = React.useState(value);
 
