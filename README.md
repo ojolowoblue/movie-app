@@ -1,6 +1,6 @@
-# React: Favorite Movie Directory
+# React: Movie Directory
 
-<span style="font-size: 16px;">Complete a partially completed React movie directory application.</span> Certain core React functionalities have already been implemented. Complete the application as shown below in order to pass all the unit tests.
+<span style="font-size: 16px;">A React Movie Application</span>
 
 ## Environment
 
@@ -9,10 +9,6 @@
 - Default Port: 8000
 
 ## Project Specifications
-
-**Read-Only Files**
-
-- `src/App.test.js`
 
 **Commands**
 
